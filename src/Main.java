@@ -1,8 +1,3 @@
-import java.time.LocalDateTime;
-import java.time.LocalDate;
-import java.time.format.TextStyle;
-import java.util.Locale;
-
 public class Main {
         public static void main(String[] args) {
                 // ! FIRST CLASS (STRING)
@@ -85,30 +80,43 @@ public class Main {
                 // ---------------------------------------------------------------------------------------------------
                 // CLASS 5 (MANIPULACAO DE STRINGS E DATAS)
 
-                String nome = "Paulo";
+                //String nome = "Paulo";
                 // System.out.println(nome.toUpperCase()); //todas as letras MAIUSCULA
                 // System.out.println(nome.toLowerCase()); //todas as letras minusculas
                 // System.out.println(nome.length()); //consultar comprimento
                 //
                 // String nomeOutro = "Paulo";
                 // System.out.println(nome.equalsIgnoreCase(nomeOutro));
-                LocalDate hoje = LocalDate.now();
-                Locale brasil = new Locale("pt", "BR");
-                // System.out.println(hoje.getDayOfWeek().getDisplayName(TextStyle.FULL,
-                // brasil));
-                String diaSemana = hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil);
-                String saudacao;
-                LocalDateTime agora = LocalDateTime.now();
-                if (agora.getHour() >= 0 && agora.getHour() < 12) {
-                        saudacao = "bom dia";
-                } else if (agora.getHour() >= 12 && agora.getHour() < 18) {
-                        saudacao = "boa tarde";
-                } else if (agora.getHour() <= 18 && agora.getHour() < 24) {
-                        saudacao = "boa noite";
-                } else {
-                        saudacao = "Ola.";
-                }
+//                LocalDate hoje = LocalDate.now();
+//                Locale brasil = new Locale("pt", "BR");
+//                // System.out.println(hoje.getDayOfWeek().getDisplayName(TextStyle.FULL,
+//                // brasil));
+//                String diaSemana = hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil);
+//                String saudacao;
+//                LocalDateTime agora = LocalDateTime.now();
+//                if (agora.getHour() >= 0 && agora.getHour() < 12) {
+//                        saudacao = "bom dia";
+//                } else if (agora.getHour() >= 12 && agora.getHour() < 18) {
+//                        saudacao = "boa tarde";
+//                } else if (agora.getHour() <= 18 && agora.getHour() < 24) {
+//                        saudacao = "boa noite";
+//                } else {
+//                        saudacao = "Ola.";
+//                }
+//
+//                System.out.printf("Ola, %s. Hoje e %s, %s.%n", nome, diaSemana, saudacao.toUpperCase());
 
-                System.out.printf("Ola, %s. Hoje e %s, %s.%n", nome, diaSemana, saudacao.toUpperCase());
+            // ---------------------------------------------------------------------------------------------------
+//! CLASS 6 (LACOS NUMERICOS)
+
+            // 1 2 3 4 5 6 7 8 9 10
+            // para uma variavel que inicia em 1, e ai ate 10, mudando 1-por-1, faca:
+            for (int i = 1; i <= 10; i++) {
+                for (int j = 1; j <= 10; j++) {
+                    System.out.println(j + "x" + i + "=" + j * i);
+                    //1x1=1
+                    //2x1=2
+                }
+            }
         }
 }
