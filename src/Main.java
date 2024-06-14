@@ -145,11 +145,11 @@ public class Main {
 
             // ---------------------------------------------------------------------------------------------------
 //! CLASS 8 (FUNCOES)
-        String nome = "Paulo";
-        saudacao(nome);
-       }
-
-       public static void saudacao(String nome) {
-          System.out.println("Hello, " + nome);
+//        String nome = "Paulo";
+//        saudacao(nome);
+//       }
+//
+//       public static void saudacao(String nome) {
+//          System.out.println("Hello, " + nome);
        }
 }
